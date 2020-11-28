@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="color_picker/build/colr_pickr.css" />
+    <script src="ui_handler.js"></script>
+</head>
+<body>
+    
+<main class="w-100 h-100 flex">
+
+    <section id="sidebar">
+        <menu></menu>
+    </section>
+
+    <div class="middle">
+
+        <menu>
+            <div>
+                <a id="type-toggle" href="#">Type</a>
+            </div>
+            <div>
+                <a  href="#" id="add-color">+</a>
+            </div>
+            <div>
+            <a  href="#" data-toggle-element="css-code" onclick="toggleElement(event)">
+                    Code
+            </a>
+                <code id="css-code"></code>
+            </div>
+            
+        </menu>
+
+    <section id="gradient">
+    
+        <div id="line"></div>
+        <input id="color-picker" name="ColorPicker" type="color"/>
+    </section>
+</div>
+
+    
+
+</main>
+
+
+<script src="app.js" type="module"></script>
+<script src="color_picker/build/colr_pickr.js" type="javascript"></script>
+</body>
+</html>
